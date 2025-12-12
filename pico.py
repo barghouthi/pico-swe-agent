@@ -7,4 +7,4 @@ def run_bash(cmd: str) -> str:
     r = subprocess.run(["bash", "-lc", cmd], capture_output=True)
     return f"exit_code:{r.returncode}\nstdout:\n{r.stdout}\nstderr:\n{r.stderr}"
 
-Agent(tools=[run_bash])(f"You are a SWE agent. {sys.argv[1:]}")
+Agent(tools=[run_bash])(f"You are a one-shot SWE agent: {sys.argv[1:]}")
