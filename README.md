@@ -4,7 +4,7 @@
 
 ## Usage
 
-You need [uv](https://docs.astral.sh/uv/getting-started/installation/#installation-methods) and an AWS account configuration.
+You need [uv](https://docs.astral.sh/uv/getting-started/installation/#installation-methods) and an AWS account configured.
 
 Run the agent by passing your instruction as CLI args, e.g.,:
 
