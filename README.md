@@ -1,6 +1,6 @@
 # pico: the tiniest coding agent, just 6 LoC!
 
-pico is an AI coding agent that is 6 lines of Python code. Still, it's incredibly powerful!
+pico is an AI coding agent that is just 6 lines of Python code. Still, it's incredibly powerful!
 
 ## usage
 
