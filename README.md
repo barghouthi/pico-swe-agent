@@ -4,7 +4,7 @@ pico is an AI coding agent that is just 6 lines of Python code. Still, it's incr
 
 ## usage
 
-You need [uv](https://docs.astral.sh/uv/getting-started/installation/#installation-methods) installed and an AWS account configured (see [Models](#models) below for other providers).
+You need [uv](https://docs.astral.sh/uv/getting-started/installation/#installation-methods) installed and an AWS account configured (see [models](#models) below for other providers).
 
 Run the agent as follows:
 
