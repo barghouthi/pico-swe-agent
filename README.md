@@ -2,9 +2,9 @@
 
 7 lines of code that defines an LLM-based coding agent with access to bash. Still it's incredibly powerful!
 
-## Usage
+### Usage
 
-You need [uv](https://docs.astral.sh/uv/getting-started/installation/#installation-methods) and an AWS account configured (see [Models](#models) below for other providers).
+You need [uv](https://docs.astral.sh/uv/getting-started/installation/#installation-methods) installed and an AWS account configured (see [Models](#models) below for other providers).
 
 Run the agent as follows:
 
@@ -21,13 +21,13 @@ uv run python pico.py "create a compound interest calculator website"
 > [!WARNING]
 > This agent can execute arbitrary shell commands. Ideally, run it in a sandbox.
 
-## Models
+### Models
 
 By default, uses Claude via Amazon Bedrock. If you want to use other models, like OpenAI's, modify the `Agent` object following the [strands documentation](https://strandsagents.com/latest/documentation/docs/user-guide/concepts/model-providers/).
 
 
 
-## Inspiration
+### Inspiration
 
 Similar in spirit to [mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent), which is 100 lines of Python.
 
