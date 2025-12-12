@@ -1,6 +1,6 @@
 # pico: the tiniest coding agent, just 7 LoC!
 
-7 lines of code that defines an LLM-based coding agent with access to bash. Still it's incredibly powerful!
+7 lines of code that defines an LLM-based coding agent. Still, it's incredibly powerful!
 
 ## Usage
 
