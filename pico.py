@@ -1,5 +1,4 @@
-import subprocess
-import sys
+import subprocess, sys
 from strands import Agent, tool
 
 @tool
