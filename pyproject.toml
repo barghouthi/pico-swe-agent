@@ -1,7 +1,7 @@
 [project]
-name = "myagent"
+name = "pico"
 version = "0.1.0"
-description = "Add your description here"
+description = "the tiniest coding agent ever"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
