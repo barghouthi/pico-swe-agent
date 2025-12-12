@@ -4,14 +4,30 @@
 
 ## Usage
 
-You need [uv](https://docs.astral.sh/uv/getting-started/installation/#installation-methods) and an AWS account configured.
+You need [uv](https://docs.astral.sh/uv/getting-started/installation/#installation-methods) and an AWS account configured (see [Models](#models) below for other providers).
 
-Run the agent by passing your instruction as CLI args, e.g.,:
+Run the agent as follows:
 
 ```bash
-uv run python pico.py create a simple website with a calculator
+uv run python pico.py <YOUR TASK>
 ```
+
+e.g.,
+
+```bash
+uv run python pico.py "create a compound interest calculator website"
+```
+
+## Models
+
+By default, uses Claude via Amazon Bedrock. If you want to use other models, like OpenAI's, modify the `Agent` object following the [strands documentation](https://strandsagents.com/latest/documentation/docs/user-guide/concepts/model-providers/).
 
 ## Safety / warning
 
-This agent can execute arbitrary shell commands through `run_bash`. Ideally, run it in a sandbox.
+> [!WARNING]
+> This agent can execute arbitrary shell commands through `run_bash`. Ideally, run it in a sandbox.
+
+## Inspiration
+
+Similar in spirit to [mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent), which is 100 lines of Python.
+
