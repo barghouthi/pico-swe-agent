@@ -25,5 +25,21 @@ uv run python pico.py "create a simple calculator website"
 
 By default, pico uses Claude via Amazon Bedrock. If you want to use other models, like OpenAI's or local models, modify the `Agent` object following the [strands documentation](https://strandsagents.com/latest/documentation/docs/user-guide/concepts/model-providers/).
 
+For example, here's how `pico.py` would look like with OpenAI's gpt-5.2 model:
+```python
+import subprocess, sys
+from strands import Agent, tool
+from strands.models.openai import OpenAIModel
+
+@tool
+def bash(cmd: str) -> str:
+    """Run a bash command and return a simple, readable result."""
+    return subprocess.run(["bash", "-lc", cmd], capture_output=True)
+
+model = OpenAIModel(model_id="gpt-5.2")
+
+Agent(tools=[bash], model=model)(f"You are a one-shot SWE agent: {sys.argv[1:]}")
+```
+
 ## details
 pico uses the `strands-agents` library for defining an agent with access to a single tool: bash. This is similar in spirit to the bash-based [mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent), which is 100 lines of Python.
