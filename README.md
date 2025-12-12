@@ -25,9 +25,5 @@ uv run python pico.py "create a simple calculator website"
 
 By default, uses Claude via Amazon Bedrock. If you want to use other models, like OpenAI's, modify the `Agent` object following the [strands documentation](https://strandsagents.com/latest/documentation/docs/user-guide/concepts/model-providers/).
 
-
-
-## Inspiration
-
-Similar in spirit to [mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent), which is 100 lines of Python.
-
+## Details
+pico uses the `strands-agents` library for defining an agent with access to a single tool: bash. This is similar in spirit to the bash-based [mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent), which is 100 lines of Python.
