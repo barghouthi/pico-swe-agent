@@ -15,7 +15,7 @@ uv run python pico.py <YOUR TASK>
 e.g.,
 
 ```bash
-uv run python pico.py "create a compound interest calculator website"
+uv run python pico.py "create a simple calculator website"
 ```
 
 > [!WARNING]
